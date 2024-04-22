@@ -24,7 +24,7 @@ const Navbar = () => {
         <Link className='heading' >Home</Link>
         <Link  className='heading'>Client</Link>
         <Link  className='heading'>About us</Link>
-        <Link  className='heading'>Services</Link>
+        <Link  className='heading' to={'/service'}>Services</Link>
         <Link to={'/login'}><button className='btn xyz'>Login</button></Link>
 
       </ul>
