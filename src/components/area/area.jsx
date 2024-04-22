@@ -4,9 +4,11 @@ import mail from '../../assets/mail.jpg'
 import locate from '../../assets/locate.png'
 import phone from '../../assets/phone.png'
 import maill from '../../assets/maill.png'
-
+import Footer from '../footer/footer'
+import Title from '../title/title'
 const area = () => {
   return (
+    <div>
     <div className='contact'>
         <div className='contact-col'>
 <h3>Send us a message<img src={mail}></img></h3>
@@ -30,7 +32,8 @@ const area = () => {
         You can reach out to us directly, or visit our services page to request a counselor to come to your home for a comprehensive assessment. With their report, we'll work with you to find the best path forward. Let's fight addiction together.
         </p>
         </div>
-      
+        </div>
+        <Footer/>
     </div>
   )
 }

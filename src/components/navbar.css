@@ -9,8 +9,12 @@ nav{
     justify-content: space-between;
     z-index: 10;
     color:#fff;
-  
     
+}
+.nav_about{
+    background:rgb(1, 36, 148);
+
+
 }
 .logo{
     font-size: 60px;

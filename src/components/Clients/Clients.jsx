@@ -14,7 +14,7 @@ const Clients = () => {
     setpho(!pho);
   };
   return (
-    <div className='clients'>
+    <div className='clients' id='client'>
       <div className='cli'>
         <img src={`${pho?c1:c5}`} alt=""></img>
         <img src={`${pho?c2:c6}`} alt=""></img>

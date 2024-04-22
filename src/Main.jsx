@@ -9,13 +9,12 @@ import Footer from './components/footer/footer'
 const Main = () => {
   return (
     <div>
-      <Navbar/>
   <Home/>
   <Title para='Our Clients' head='Our Trusted members'/>
   <Clients/>
   <About/>
-  <Title para='About us' head='Get in touch'/>
-<Area/>
+  {/* <Title para='About us' head='Get in touch'/> */}
+{/* <Area/> */}
 <Footer/>
 
     </div>
