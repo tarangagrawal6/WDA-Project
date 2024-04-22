@@ -16,6 +16,11 @@ nav{
 
 
 }
+
+.nav_client{
+    background:rgb(1, 36, 148);
+
+}
 .logo{
     font-size: 60px;
 }

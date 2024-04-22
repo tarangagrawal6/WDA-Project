@@ -5,7 +5,9 @@ import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import Main from './Main'
 import About from './components/about/about'
 import Area from './components/area/area'
+import Serive from './components/services/Service'
 import Navbar from './components/navbar'
+import Clients from './components/Clients/Clients'
 const App = () => {
   return (
     <div>
@@ -16,6 +18,8 @@ const App = () => {
 <Route element={<Login/>} path='/login'/>
 <Route element={<Area/>} path='/about'/>
 <Route element={<Main/>} path='/' />
+<Route element={<Serive/>  } path='/service'/>
+<Route element={<Clients/>} path='/client'/>
   </Routes>
   </Router>
   </div>

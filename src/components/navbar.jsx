@@ -15,18 +15,14 @@ const Navbar = () => {
   }, []);
   
   return (
-    <nav className={`container ${stic ? 'dark-nav' : ''} ${location.pathname==='/about'?'nav_about':''}`}>
+    <nav className={`container ${stic ? 'dark-nav' : ''} ${location.pathname==='/about'?'nav_about':''} ${location.pathname==='/client'?'nav_client':''}`}>
       <h1 className="logo">NashaMukti</h1>
       <ul>
-        {/* <Link>Home</li>
-        <li>Clients</li>
-        <li>About us</li>
-        <li>Services</li>
-        <li><button className='btn'>Login</button></li> */}
+       
         <Link  className='heading' to={'/'}>Home</Link>
-        <AnchorLink  className='heading' href='#client'>Client</AnchorLink>
+        {location.pathname === '/' ? <AnchorLink className='heading' href='#client'>Client</AnchorLink> : <Link to={'/client'}>Client</Link>}
         <Link  className='heading' to={'/about'}>About us</Link>
-        <Link  className='heading'>Services</Link>
+        <Link  className='heading' to={'/service'}>Services</Link>
         <Link to={'/login'}><button className='btn xyz'>Login</button></Link>
 
       </ul>
